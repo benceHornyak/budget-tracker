@@ -1,7 +1,9 @@
+import { AddButton } from '@budget-tracker/components/add-button/add-button';
+
 const Tracker = (): JSX.Element => {
   return (
     <>
-      <div>Tracker</div>
+      <AddButton onClick={(): void => console.log('add')} />
     </>
   );
 };
