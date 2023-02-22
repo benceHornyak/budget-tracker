@@ -15,5 +15,5 @@ body {
 }
 
 #__next {
-  @apply flex flex-col justify-center items-center  h-screen bg-white leading-normal text-base tracking-normal;
+  @apply h-screen bg-white leading-normal text-base tracking-normal;
 }
