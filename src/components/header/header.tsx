@@ -1,3 +1,4 @@
+import { signOut } from 'next-auth/react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Logo } from '../logo/logo';
@@ -10,6 +11,9 @@ const navData = [
 
 export const Header = (): JSX.Element => {
   const router = useRouter();
+  const onLogoutButtonClick = (): void => {
+    signOut();
+  };
 
   return (
     <>
