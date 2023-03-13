@@ -1,6 +1,7 @@
 import { signOut } from 'next-auth/react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { Button } from '../button/button';
 import { Logo } from '../logo/logo';
 
 const navData = [
@@ -34,6 +35,7 @@ export const Header = (): JSX.Element => {
               {e.name}
             </Link>
           ))}
+          <Button onClick={onLogoutButtonClick}>Logout</Button>
         </div>
       </div>
     </>
