@@ -9,8 +9,9 @@ export const NewExpenseForm = ({
   setModalOpen: Dispatch<SetStateAction<boolean>>;
 }): JSX.Element => {
   const { register, handleSubmit } = useForm();
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
-    console.log(data);
     setModalOpen(false);
   };
 
